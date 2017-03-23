@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+	<grants />
+	<permissions />
+	<actions>
+		<!-- Admin View -->
+		<action name="dispMediawikimemberAdminIndex" type="view" admin_index="true" />
+
+    <!-- Admin Controller -->
+    <action name="procMediawikimemberAdminSiteChange" type="controller" />
+	</actions>
+</module>

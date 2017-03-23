@@ -1,0 +1,49 @@
+<!--#include("./_header.html")-->
+
+<div cond="$XE_VALIDATOR_MESSAGE" class="message {$XE_VALIDATOR_MESSAGE_TYPE}">
+    <p>{$XE_VALIDATOR_MESSAGE}</p>
+</div>
+<form class="x_form-horizontal" action="./" method="post" id="mediawikimember">
+	<input type="hidden" name="module" value="mediawikimember" />
+	<input type="hidden" name="act" value="procMediawikimemberAdminSiteChange" />
+
+    <section class="section able_module_setting">
+        <div class="x_control-group module_io">
+            <label for="able_module" class="x_control-label">{$lang->sync_able}</label>
+            <div class="x_controls" style="padding-top:3px">
+                <input type="checkbox" name="able_module" id="able_module" value="Y" checked="checked"|cond="$able_module=='Y'" />
+                <span class="x_help-inline">{$lang->about_sync_able}</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+		<h2 style="padding-top:12px">{$lang->server_setting}</h2>
+        <div class="x_control-group">
+            <div class="x_control-label">{$lang->server_url}</div>
+            <div class="x_controls">
+            <select name="site_protocol" style="min-width:0px">
+                <option value="http://" selected="selected"|cond="$site_protocol != 'https://'">http://</option>
+                <option value="https://" selected="selected"|cond="$site_protocol == 'https://'">https://</option>
+            </select>
+            <input type="text" name="site_url" value="{$site_url}" style="width:50%">
+            </div>
+        </div>
+        <div class="x_control-group">
+            <div class="x_control-label">{$lang->admin_id}</div>
+            <div class="x_controls">
+                <input type="text" name="admin_id" value="{$admin_id}" style="width:30%">
+            </div>
+        </div>
+        <div class="x_control-group">
+            <div class="x_control-label">{$lang->admin_pw}</div>
+            <div class="x_controls">
+                <input type="password" name="admin_pw" placeholder="{$admin_pw}" style="width:30%">
+            </div>
+        </div>
+    </section>
+
+    <div class="x_clearfix btnArea">
+        <button type="submit" class="x_btn x_btn-primary x_pull-right">저장</button>
+    </div>
+</form>

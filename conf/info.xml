@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="0.2">
+    <title xml:lang="ko">mediawiki 회원 동기화 모듈</title>
+    <description xml:lang="ko">mediawiki와 회원 정보를 공유하기 위한 모듈입니다. XE의 정보를 이용하여 mediawiki의 회원 정보를 갱신합니다.</description>
+    <version>0.0.1</version>
+    <date>2017-02-27</date>
+    <category>system</category>
+
+    <author email_address="micalgenus@gmail.com" link="http://micalgenus.tistory.com">
+        <name xml:lang="ko">Micalgenus</name>
+    </author>
+</module>

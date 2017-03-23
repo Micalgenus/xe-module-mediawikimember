@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<lang>
+	<item name="mediawikimember">
+		<value xml:lang="ko"><![CDATA[mediawiki 회원 동기화]]></value>
+	</item>
+  <item name="sync_able">
+    <value xml:lang="ko"><![CDATA[동기화 사용]]></value>
+  </item>
+  <item name="about_sync_able">
+    <value xml:lang="ko"><![CDATA[mediawiki회원 정보에 XE회원 정보를 추가 및 수정합니다.]]></value>
+  </item>
+  <item name="server_setting">
+    <value xml:lang="ko"><![CDATA[mediawiki 서버 정보 설정]]></value>
+  </item>
+  <item name="server_url">
+    <value xml:lang="ko"><![CDATA[mediawiki URL]]></value>
+  </item>
+</lang>
